@@ -36,7 +36,7 @@ public class StudentController {
         return studentService.getStudent(name)  ;
     }
 
-
+//Save Student
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public boolean saveStudent(@RequestBody StudentDto studentDto) {
         return studentService.saveStudent(studentDto);
