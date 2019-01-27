@@ -17,6 +17,7 @@ public class StudentController {
 
     @GetMapping(value = "/test")
     public String add() {
+    	System.out.print("test");
         return "add";
 
     }
